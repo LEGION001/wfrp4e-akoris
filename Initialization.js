@@ -1,0 +1,303 @@
+Hooks.on("init", () => {
+
+	const config ={};
+	
+	config.godBlessings = {
+    balrog: [
+      "Compendium.wfrp4e-core.items.Item.FElNQGNiPzaOwwKT",  
+      "Compendium.wfrp4e-core.items.Item.iIfYOlNrLb0uiV8c",  
+      "Compendium.wfrp4e-core.items.Item.0r3moMIHXsBrcOyh",  
+      "Compendium.wfrp4e-core.items.Item.K5DE9cceinUTIrem",  
+      "Compendium.wfrp4e-core.items.Item.FRkIz2sR7ZC92W2G",  
+      "Compendium.wfrp4e-core.items.Item.tMocig1z9dHKNiCT"   
+    ],
+  }
+	
+	    game.wfrp4e.utility.mergeCareerReplacements({
+        human : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        dwarf : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Barbarian" :["Slayer"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        helf : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        welf : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+            "Bounty Hunter" : ["Ghost Strider"],
+			"Entertainer" :["Wardancer"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        delf : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant", "Sorceress"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Assassin" :["Assassin of Sharati"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        halfling : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        orc : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        gnome : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        dragonborn : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        halfelf : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+            "Bounty Hunter" : ["Ghost Strider"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        halfdwarf : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        humanling : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        halforc : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        dwarfelf : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+            "Bounty Hunter" : ["Ghost Strider"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        dwarfling : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        dwarforc : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        elfling : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+            "Bounty Hunter" : ["Ghost Strider"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        elforc : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+            "Bounty Hunter" : ["Ghost Strider"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+        orcling : {
+            "Apothecary" : ["Mundane Alchemist"],
+            "Wizard" : ["Hierophant", "Alchemist", "Druid", "Astromancer", "Shadowmancer", "Spiriter", "Pyromancer", "Shaman", "Magister Vigilant"],
+            "Mystic" : ["Scryer"],
+            "Guard" : ["Beadle"],
+            "Engineer" : ["Artillerist"],
+            "Scholar" : ["Cartographer"],
+            "Pedlar" : ["Camp Follower"],
+            "Cavalryman" : ["Light Cavalry"],
+            "Knight" : ["Freelance","Paladin"],
+            "Soldier" : ["Archer", "Halberdier", "Greatsword", "Pikeman", "Siege Specialist"],
+			"Priest" : ["Priest of Hesirne"],
+            "Flagellant" : ["Nun", "Priest"]
+        },
+
+        "helf-vastarellian" : {
+            "Wizard" : ["Mage of Varis"],
+			"Priest" : ["Mage of Varis"],
+			"Knight" : ["Duskblade"]
+        }
+    })
+	
+	    fetch(`modules/wfrp4e-akoris/trade/gazetteer.json`).then(r => r.json()).then(async records => {
+        game.wfrp4e.config.trade.gazetteer = game.wfrp4e.config.trade.gazetteer.concat(records)
+      })
+	
+})

@@ -1,0 +1,120 @@
+{
+	"title": "WFRP4e - Akoris Edition",
+	"description": "A conversion of the WFRP4e System to work with the Akoris homebrew world.",
+	"version": "0.1",
+	"authors": [
+		{
+		"name": "LEGION"
+		}
+	],
+	"scripts":[
+	"Initialization.js"
+	],
+	"esmodules":[
+		"species.js",
+		"subspecies.js",
+		"rule_changes.js"
+	], 
+	"compatibility": {
+		"minimum": "0.8.6",
+		"verified": "11",
+		"maximum": "13"
+	},
+  "packs": [
+        {
+      "name": "bestiary",
+      "system": "wfrp4e",
+      "label": "Bestiary (Akoris)",
+      "path": "./packs/bestiary.db",
+      "module": "wfrp4e-akoris",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },{
+      "name": "items",
+      "system": "wfrp4e",
+      "label": "Items (Akoris)",
+      "path": "./packs/items.db",
+      "module": "wfrp4e-akoris",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "tables",
+      "system": "wfrp4e",
+      "label": "Tables (Akoris)",
+      "path": "./packs/tables.db",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "journal-entries",
+      "system": "wfrp4e",
+      "label": "Journals (Akoris)",
+      "path": "./packs/journal-entries.db",
+      "module": "wfrp4e-akoris",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "careers",
+      "system": "wfrp4e",
+      "label": "Careers (Akoris)",
+      "path": "./packs/careers.db",
+      "module": "wfrp4e-akoris",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "maps",
+      "system": "wfrp4e",
+      "label": "Maps (Akoris)",
+      "path": "./packs/maps.db",
+      "module": "wfrp4e-akoris",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Akoris",
+      "sorting": "m",
+      "color": "#465967",
+      "packs": [
+        "bestiary",
+        "items",
+        "journal-entries",
+        "tables",
+        "maps"
+      ]
+    }
+  ],
+  
+	"id": "wfrp4e-akoris",
+	"relationships": {
+		"systems": [
+		  {
+			"id": "wfrp4e",
+			"type": "system",
+			"compatibility": {}
+		  }
+		]
+	  }
+}

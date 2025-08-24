@@ -1,0 +1,8 @@
+2025/08/24-15:25:29.819 4fec Recovering log #836
+2025/08/24-15:25:29.853 4fec Delete type=0 #836
+2025/08/24-15:25:29.854 4fec Delete type=3 #835
+2025/08/24-15:26:43.966 28b8 Level-0 table #840: started
+2025/08/24-15:26:43.966 28b8 Level-0 table #840: 0 bytes OK
+2025/08/24-15:26:43.983 28b8 Delete type=0 #838
+2025/08/24-15:26:44.008 28b8 Manual compaction at level-0 from '!actors!0qLoXIcqiLuBJCjp' @ 72057594037927935 : 1 .. '!actors.items.effects!zzdOpKqBC28J66Mn.EsEPtlY2zlis0Gb1.HipPSD61s7Vkcru0' @ 0 : 0; will stop at (end)
+2025/08/24-15:26:44.008 28b8 Manual compaction at level-1 from '!actors!0qLoXIcqiLuBJCjp' @ 72057594037927935 : 1 .. '!actors.items.effects!zzdOpKqBC28J66Mn.EsEPtlY2zlis0Gb1.HipPSD61s7Vkcru0' @ 0 : 0; will stop at (end)

@@ -1,0 +1,15 @@
+[{
+        "score": 30,
+        "name": "Test",
+        "size": 4,
+        "ruler": "Test",
+        "pop": 30000,
+        "w": 4,
+        "isTrade": true,
+        "produces": ["grain", "wool", "luxuries"],
+        "luxuries": ["Cheese"],
+        "garrison": " 300a,600b/300b,1000c",
+        "notes": ""
+    }
+
+]

@@ -1,0 +1,123 @@
+{
+	"title": "WFRP4e - Akoris Edition",
+	"descritpion": "A conversion of the WFRP4e System to work with the Akoris homebrew world.",
+	"version": "0.1",
+	"authors": [
+	{
+		"name": "LEGION"
+	}
+	],
+	"scripts":[
+	"Initialization.js"
+	],
+	"esmodules":[
+		"species.js",
+		"subspecies.js"
+	],
+	"compatibility": {
+		"minimum": "0.8.6",
+		"verified": "9",
+		"maximum": "10"
+	},
+  "packs": [
+        {
+      "name": "Akorismonsters",
+      "system": "wfrp4e",
+      "label": "Beastiary (Akoris)",
+      "path": "packs/Akorismonsters.db",
+      "module": "wfrp4e-akoris",
+      "type": "Actor"
+    },
+    {
+      "name": "Akorisrolltable",
+      "system": "wfrp4e",
+      "label": "Tables (Akoris)",
+      "path": "packs/Akorisrolltable.db",
+      "module": "wfrp4e-akoris",
+      "type": "RollTable"
+    },
+    {
+      "name": "AkorisJournalEntries",
+      "system": "wfrp4e",
+      "label": "Journals (Akoris)",
+      "path": "packs/AkorisJournalEntries.db",
+      "module": "wfrp4e-akoris",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "Akoristrappings",
+      "system": "wfrp4e",
+      "label": "Trappings (Akoris)",
+      "path": "packs/Akoristrappings.db",
+      "module": "wfrp4e-akoris",
+      "type": "Item"
+    },
+    {
+      "name": "Akoriscareers",
+      "system": "wfrp4e",
+      "label": "Careers (Akoris)",
+      "path": "packs/Akoriscareers.db",
+      "module": "wfrp4e-akoris",
+      "type": "Item"
+    },
+    {
+      "name": "Akorisspells",
+      "system": "wfrp4e",
+      "label": "Spells (Akoris)",
+      "path": "packs/Akorisspells.db",
+      "module": "wfrp4e-akoris",
+      "type": "Item"
+    },
+    {
+      "name": "Akoristalents",
+      "system": "wfrp4e",
+      "label": "Talents (Akoris)",
+      "path": "packs/Akoristalents.db",
+      "module": "wfrp4e-akoris",
+      "type": "Item"
+    },
+    {
+      "name": "Akoristraits",
+      "system": "wfrp4e",
+      "label": "Traits (Akoris)",
+      "path": "packs/Akoristraits.db",
+      "module": "wfrp4e-akoris",
+      "type": "Item"
+    },
+    {
+      "name": "Akorismutations",
+      "system": "wfrp4e",
+      "label": "Mutations (Akoris)",
+      "path": "packs/Akorismutations.db",
+      "module": "wfrp4e-akoris",
+      "type": "Item"
+    },
+    {
+      "name": "Akorisprayers",
+      "system": "wfrp4e",
+      "label": "Prayers (Akoris)",
+      "path": "packs/Akorisprayers.db",
+      "module": "wfrp4e-akoris",
+      "type": "Item"
+    },
+    {
+      "name": "Akorisotheritems",
+      "system": "wfrp4e",
+      "label": "OtherItems (Akoris)",
+      "path": "packs/Akorisotheritems.db",
+      "module": "wfrp4e-akoris",
+      "type": "Item"
+    }
+  ],
+  
+	"id": "wfrp4e-akoris",
+	"relationships": {
+		"systems": [
+		  {
+			"id": "wfrp4e",
+			"type": "system",
+			"compatibility": {}
+		  }
+		]
+	  }
+}
